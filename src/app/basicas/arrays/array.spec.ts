@@ -1,6 +1,7 @@
 import { obtenerRobots } from './array';
 
-describe('Prubea de arreglos', () => {
+//Con una "x" se saltea la prueba
+xdescribe('Prubea de arreglos', () => {
   it('Debe de retornar al menos 3 robots', () => {
     const res = obtenerRobots();
     expect(res.length).toBeGreaterThanOrEqual(3);
