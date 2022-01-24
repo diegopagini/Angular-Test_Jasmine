@@ -32,8 +32,6 @@ describe('NavbarComponent', () => {
       By.directive(RouterLinkWithHref)
     );
 
-    // console.log( elementos );
-
     let existe = false;
 
     for (const elem of elementos) {

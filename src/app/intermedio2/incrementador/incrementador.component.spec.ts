@@ -22,8 +22,9 @@ describe('Incremendator Component', () => {
 
     fixture.detectChanges(); //Disparar la detección de cambios
 
-    const elem: HTMLElement = fixture.debugElement.query(By.css('h3'))
-      .nativeElement;
+    const elem: HTMLElement = fixture.debugElement.query(
+      By.css('h3')
+    ).nativeElement;
 
     expect(elem.innerHTML).toContain('Progreso de carga');
   });
@@ -55,8 +56,9 @@ describe('Incremendator Component', () => {
 
     fixture.detectChanges();
 
-    const elem: HTMLElement = fixture.debugElement.query(By.css('h3'))
-      .nativeElement;
+    const elem: HTMLElement = fixture.debugElement.query(
+      By.css('h3')
+    ).nativeElement;
 
     expect(elem.innerHTML).toContain('45');
   });
