@@ -3,7 +3,6 @@ import {
   Input,
   Output,
   ViewChild,
-  OnInit,
   EventEmitter,
   ElementRef,
 } from '@angular/core';
@@ -13,7 +12,7 @@ import {
   templateUrl: './incrementador.component.html',
   styles: [],
 })
-export class IncrementadorComponent implements OnInit {
+export class IncrementadorComponent {
   @ViewChild('txtProgress') txtProgress: ElementRef;
 
   @Input('nombre') leyenda: string = 'Leyenda';
@@ -21,10 +20,6 @@ export class IncrementadorComponent implements OnInit {
 
   @Output('actualizaValor')
   cambioValor: EventEmitter<number> = new EventEmitter();
-
-  constructor() {}
-
-  ngOnInit() {}
 
   onChanges(newValue: number) {
     if (newValue >= 100) {

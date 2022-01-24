@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MedicoService } from './medico.service';
 
 @Component({
@@ -6,12 +6,10 @@ import { MedicoService } from './medico.service';
   templateUrl: './medico.component.html',
   styleUrls: ['./medico.component.css'],
 })
-export class MedicoComponent implements OnInit {
+export class MedicoComponent {
   medicos: any[] = [];
 
   constructor(public _medicoService: MedicoService) {}
-
-  ngOnInit(): void {}
 
   saludarMedico(nombre: string) {
     return `Hola ${nombre}`;
